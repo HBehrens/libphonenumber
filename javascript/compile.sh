@@ -28,7 +28,7 @@
 # CLASSPATH=/opt/closure-compiler/compiler.jar ./compile.sh
 
 : ${CLASSPATH:='/usr/local/share/closure-compiler/compiler.jar'}
-: ${CLOSUREPATH:='../../closure-library/closure/goog'}
+: ${CLOSUREPATH:='vendor/closure-library/closure/goog'}
 
 # If CLASSPATH was set by this script, it needs to be exported to make it
 # visible to the JVM.
