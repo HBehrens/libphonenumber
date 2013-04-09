@@ -52,6 +52,7 @@ function jscomp {
     --js $CLOSUREPATH/proto2/pbliteserializer.js \
     --js $CLOSUREPATH/proto2/serializer.js \
     --js $CLOSUREPATH/proto2/util.js \
+    --js $CLOSUREPATH/proto2/objectserializer.js \
     --js $CLOSUREPATH/string/string.js \
     --js $CLOSUREPATH/string/stringbuffer.js \
     "$@"
