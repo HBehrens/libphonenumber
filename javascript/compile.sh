@@ -37,7 +37,13 @@ export CLASSPATH
 SRCPATH='i18n/phonenumbers'
 
 function jscomp {
-  java com.google.javascript.jscomp.CommandLineRunner \
+  if hash closure-compiler 2>/dev/null; then
+    CC="closure-compiler"
+  else
+    CC="java com.google.javascript.jscomp.CommandLineRunner"
+  fi
+  
+  $CC \
     --jscomp_warning=deprecated \
     --jscomp_warning=missingProperties \
     --js $CLOSUREPATH/base.js \
